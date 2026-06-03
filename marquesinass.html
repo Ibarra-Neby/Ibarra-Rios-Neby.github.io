@@ -1,70 +1,218 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
+<html lang="es">
 <head>
-<title>MARQUESINAS</title>
-<style>
-</style>
-</head>
-<body>
-<div>
-<center> 
-<h1> Ejemplos de marquesinas </h1>
-</center>
-</div>
-<hr>
-<h1 align="center">Marquesina horizontal</h1>
-<marquee>
-marquesina de izquierda a derecha
-</marquee>
-<h1 align="center">Marquesina horizontal</h1>
-<marquee direction="right">
-marquesina de derecha a izquierda
-</marquee>
-<h1 align="center">Marquesina Vertical</h1>
-<center>
-<marquee direction="up"; style="background-color: lightblue"; height="200">
-marquesina que sube <br>
-</center>
-texto 1  <br>
-texto 2 <br>
-texto 3 <br>
-texto 4 <br>
-texto 5 <br>
-</marquee>
-<h1 align="center">Marquesina Vertical</h1>
-<center>
-<marquee direction="down"; style="background-color: lightblue"; height="200" scrollamount="30"
-marquesina que sube <br>
-</center>
-texto 1  <br>
-texto 2 <br>
-texto 3 <br>
-texto 4 <br>
-texto 5 <br>
-</marquee>
-<h2>Marquesina con rebote</h2>
-<marquee behavior="alternate" scrollamount="9"
->
-marquesina que rebota en las orillas
-</marquee>
+    <meta charset="UTF-8">
+    <title>Marquesinas</title>
+    <link rel="icon" href="codigo-html.png">
 
-<h2>Marquesina rapida</h2>
-<marquee scrollamount="30">
-marquesina rapida
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#e8f4ff;
+        }
+
+        .encabezado{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .contenedor{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .seccion{
+            background:white;
+            margin-bottom:20px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .titulo{
+            color:#003366;
+            border-bottom:3px solid #66b3ff;
+            padding-bottom:5px;
+            text-align:center;
+        }
+
+        .marquesina{
+            background:#d9ecff;
+            padding:10px;
+            border:2px solid #3399ff;
+            border-radius:8px;
+            margin-top:10px;
+        }
+
+        .pie{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        img{
+            border-radius:10px;
+            margin:5px;
+            border:3px solid #003366;
+        }
+
+        .animal{
+            display:inline-block;
+            text-align:center;
+            margin:20px;
+            vertical-align:top;
+        }
+
+        .animal h3{
+            margin-bottom:10px;
+            color:#003366;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="encabezado">
+        <h1>Ejemplos de Marquesinas en HTML</h1>
+    </div>
+
+    <div class="contenedor">
+
+        <!-- Marquesina Izquierda-->
+        <div class="seccion">
+            <h2 class="titulo">1. Marquesina hacia la izquierda</h2>
+
+            <div class="marquesina">
+                <marquee>
+                    Bienvenidos al submódulo de Implementa
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Derecha -->
+        <div class="seccion">
+            <h2 class="titulo">2. Marquesina hacia la derecha</h2>
+
+            <div class="marquesina">
+                <marquee direction="right">
+                    Este texto se mueve hacia la derecha.
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Vertical -->
+        <div class="seccion">
+            <h2 class="titulo">3. Marquesina Vertical Arriba</h2>
+
+            <div class="marquesina">
+                <marquee direction="up" height="120">
+                    Texto<br>
+                    Texto<br>
+                    Este texto se mueve hacia arriba
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Vertical -->
+        <div class="seccion">
+            <h2 class="titulo">4. Marquesina Vertical Abajo</h2>
+
+            <div class="marquesina">
+                <marquee direction="down" height="120">
+                    Texto<br>
+                    Texto<br>
+                    Este texto se mueve hacia abajo
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina con Rebote -->
+        <div class="seccion">
+            <h2 class="titulo">5. Marquesina con Rebote</h2>
+
+            <div class="marquesina">
+                <marquee behavior="alternate">
+                    Texto que rebota de un lado al otro
+                </marquee>
+            </div>
+        </div>
+
+        
+        <!-- Marquesina Rápida -->
+        <div class="seccion">
+            <h2 class="titulo">6. Marquesina Rápida</h2>
+
+            <div class="marquesina">
+                <marquee scrollamount="15">
+                    Texto rápido
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina Lenta -->
+        <div class="seccion">
+            <h2 class="titulo">7. Marquesina Lenta</h2>
+
+            <div class="marquesina">
+                <marquee scrollamount="3">
+                    Texto lento
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Marquesina con Imágenes -->
+        <div class="seccion">
+            <h2 class="titulo">8. Marquesina con Imágenes</h2>
+
+            <div class="marquesina">
+
+                <marquee direction="up" scrollamount="8">
+
+                    <span class="animal">
+                        <h3>battle cat</h3>
+                        <img src="battlecat.gif" width="120" height="120" alt="Loro">
+                    </span>
+
+                    <span class="animal">
+                        <h3>Puffer</h3>
+                        <img src="catcat.gif" width="120" height="120" alt="Mariposa">
+                    </span>
+
+                    <span class="animal">
+                        <h3>Scuba</h3>
+                        <img src="scuba.gif" width="120" height="120" alt="Tigre">
+                    </span>
+
+                </marquee>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="seccion">
+        <h2 class="titulo">9. Link con marquesina</h2>
+<marquee scrollamount="15">
+<a href="https://youtu.be/9FjGP4t2zKY?si=gCpDr1STpEBOUSv5">video muy chistoso lo juro</a>
 </marquee>
-<h2>Marquesina lenta</h2>
-<marquee scrollamount="3">
-marquesina lenta
-</marquee>
-<h2>marquesina con imagenes</h2>
-<marquee scrollamount="15" behavior="alternate">
-<h3>Scuba</h3>
-<img src="Scuba.gif">
-<h3>puffer</h3>
-<img src="catcat.gif">
-<H3>battle cat</H3>
-<img src="battlecat.gif">
-</marquee>
+    </div>
+<div class="seccion">
+<h2 class="titulo">10. Video con marquesina</h2>
+<marquee scrollamount="15">
+    <video width="640" height="360" controls>
+    <source src="Rats have a slap fight.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+    </div>
+
+    <div class="pie">
+        <h3>Práctica de HTML, CSS y Marquesinas</h3>
+    </div>
+
+
 </body>
 </html>
