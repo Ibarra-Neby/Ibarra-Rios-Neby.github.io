@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>MARQUESINAS</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#e8f4ff;
+        }
+
+        .encabezado{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .contenedor{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .seccion{
+            background:white;
+            margin-bottom:20px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .titulo{
+            color:#003366;
+            border-bottom:3px solid #66b3ff;
+            padding-bottom:5px;
+            text-align:center;
+        }
+
+        .marquesina{
+            background:#d9ecff;
+            padding:10px;
+            border:2px solid #3399ff;
+            border-radius:8px;
+            margin-top:10px;
+        }
+
+        .pie{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        img{
+            border-radius:10px;
+            margin:5px;
+            border:3px solid #003366;
+        }
+
+        .animal{
+            display:inline-block;
+            text-align:center;
+            margin:20px;
+            vertical-align:top;
+        }
+
+        .animal h3{
+            margin-bottom:10px;
+            color:#003366;
+        }
+    </style>
+</head>
+<body>
+<div>
+<center> 
+<h1> Ejemplos de marquesinas </h1>
+</center>
+</div>
+<hr>
+<h1 align="center">Marquesina horizontal</h1>
+<marquee>
+marquesina de izquierda a derecha
+</marquee>
+<h1 align="center">Marquesina horizontal</h1>
+<marquee direction="right">
+marquesina de derecha a izquierda
+</marquee>
+<h1 align="center">Marquesina Vertical</h1>
+<center>
+<marquee direction="up"; style="background-color: lightblue"; height="200">
+marquesina que sube <br>
+</center>
+texto 1  <br>
+texto 2 <br>
+texto 3 <br>
+texto 4 <br>
+texto 5 <br>
+</marquee>
+<h1 align="center">Marquesina Vertical</h1>
+<center>
+<marquee direction="down"; style="background-color: lightblue"; height="200" scrollamount="30"
+marquesina que sube <br>
+</center>
+texto 1  <br>
+texto 2 <br>
+texto 3 <br>
+texto 4 <br>
+texto 5 <br>
+</marquee>
+<h2>Marquesina con rebote</h2>
+<marquee behavior="alternate" scrollamount="9"
+>
+marquesina que rebota en las orillas
+</marquee>
+
+<h2>Marquesina rapida</h2>
+<marquee scrollamount="30">
+marquesina rapida
+</marquee>
+<h2>Marquesina lenta</h2>
+<marquee scrollamount="3">
+marquesina lenta
+</marquee>
+<h2>marquesina con imagenes</h2>
+<marquee scrollamount="15" behavior="alternate">
+    <span>
+<h3>Scuba</h3>
+<img src="Scuba.gif">
+</span>
+<span>
+<h3>puffer</h3>
+<img src="catcat.gif">
+</span>
+<span>
+<H3>battle cat</H3>
+<img src="battlecat.gif">
+</span>
+</marquee>
+<h2>Link con marquesina</h2>
+<marquee scrollamount="15">
+<a href="https://youtu.be/9FjGP4t2zKY?si=gCpDr1STpEBOUSv5">video muy chistoso lo juro</a>
+</marquee>
+<h2>Video con marquesina</h2>
+<marquee scrollamount="15">
+    <video width="640" height="360" controls>
+    <source src="Rats have a slap fight.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+</video>
+</marquee>
+</body>
+</html>
